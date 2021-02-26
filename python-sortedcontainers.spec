@@ -8,7 +8,7 @@ Summary:	Sorted Containers - Sorted List, Sorted Dict, Sorted Set
 Summary(pl.UTF-8):	Posortowane kontenery - lista, słownik, zbiór
 Name:		python-sortedcontainers
 Version:	2.1.0
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/sortedcontainers/
