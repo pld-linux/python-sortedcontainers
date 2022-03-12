@@ -7,13 +7,13 @@
 Summary:	Sorted Containers - Sorted List, Sorted Dict, Sorted Set
 Summary(pl.UTF-8):	Posortowane kontenery - lista, słownik, zbiór
 Name:		python-sortedcontainers
-Version:	2.1.0
-Release:	2
+Version:	2.4.0
+Release:	1
 License:	Apache v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/sortedcontainers/
 Source0:	https://files.pythonhosted.org/packages/source/s/sortedcontainers/sortedcontainers-%{version}.tar.gz
-# Source0-md5:	41a4a1eaf7b85e6b3beb14cfb160bc27
+# Source0-md5:	50eeb6cb739568b590b28f9a3f445c78
 URL:		https://pypi.org/project/sortedcontainers/
 %if %{with python2}
 BuildRequires:	python-modules >= 1:2.7
@@ -31,7 +31,7 @@ BuildRequires:	python3-tox
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
-Requires:	python-modules
+Requires:	python-modules >= 1:2.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -47,7 +47,7 @@ kolekcji, napisana w czystym Pythonie, szybka jak rozszerzenia w C.
 Summary:	Sorted Containers - Sorted List, Sorted Dict, Sorted Set
 Summary(pl.UTF-8):	Posortowane kontenery - lista, słownik, zbiór
 Group:		Libraries/Python
-Requires:	python3-modules
+Requires:	python3-modules >= 1:3.2
 
 %description -n python3-sortedcontainers
 Sorted Containers is an Apache2 licensed sorted collections library,
